@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="global-nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
@@ -15,8 +15,15 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.global-nav {
+  background-color: #42b98338;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
 nav a {
